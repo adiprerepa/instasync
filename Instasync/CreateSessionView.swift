@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  CreateSessionView.swift
 //  Instasync
 //
 //  Created by Adi on 6/8/22.
@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct CreateSessionView: View {
     var body: some View {
         Text("Hello, world!")
             .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct CreateSessionView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        CreateSessionView()
     }	
 }

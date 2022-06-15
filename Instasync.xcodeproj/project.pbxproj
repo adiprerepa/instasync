@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		408B46672851A58B00AA9E23 /* InstasyncApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408B46662851A58B00AA9E23 /* InstasyncApp.swift */; };
-		408B46692851A58B00AA9E23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408B46682851A58B00AA9E23 /* ContentView.swift */; };
+		408B46692851A58B00AA9E23 /* CreateSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408B46682851A58B00AA9E23 /* CreateSessionView.swift */; };
 		408B466B2851A58C00AA9E23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 408B466A2851A58C00AA9E23 /* Assets.xcassets */; };
 		408B466E2851A58C00AA9E23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 408B466D2851A58C00AA9E23 /* Preview Assets.xcassets */; };
 		408B46782851A58C00AA9E23 /* InstasyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408B46772851A58C00AA9E23 /* InstasyncTests.swift */; };
 		408B46822851A58C00AA9E23 /* InstasyncUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408B46812851A58C00AA9E23 /* InstasyncUITests.swift */; };
 		408B46842851A58C00AA9E23 /* InstasyncUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408B46832851A58C00AA9E23 /* InstasyncUITestsLaunchTests.swift */; };
+		40FC51DE2859AF52006579FB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FC51DD2859AF52006579FB /* MainView.swift */; };
+		40FC51E02859AFE6006579FB /* JoinSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FC51DF2859AFE6006579FB /* JoinSessionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		408B46632851A58B00AA9E23 /* Instasync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instasync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		408B46662851A58B00AA9E23 /* InstasyncApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstasyncApp.swift; sourceTree = "<group>"; };
-		408B46682851A58B00AA9E23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		408B46682851A58B00AA9E23 /* CreateSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSessionView.swift; sourceTree = "<group>"; };
 		408B466A2851A58C00AA9E23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		408B466D2851A58C00AA9E23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		408B46732851A58C00AA9E23 /* InstasyncTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstasyncTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +46,8 @@
 		408B467D2851A58C00AA9E23 /* InstasyncUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstasyncUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		408B46812851A58C00AA9E23 /* InstasyncUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstasyncUITests.swift; sourceTree = "<group>"; };
 		408B46832851A58C00AA9E23 /* InstasyncUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstasyncUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		40FC51DD2859AF52006579FB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		40FC51DF2859AFE6006579FB /* JoinSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinSessionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +99,11 @@
 			isa = PBXGroup;
 			children = (
 				408B46662851A58B00AA9E23 /* InstasyncApp.swift */,
-				408B46682851A58B00AA9E23 /* ContentView.swift */,
+				40FC51DD2859AF52006579FB /* MainView.swift */,
+				408B46682851A58B00AA9E23 /* CreateSessionView.swift */,
 				408B466A2851A58C00AA9E23 /* Assets.xcassets */,
 				408B466C2851A58C00AA9E23 /* Preview Content */,
+				40FC51DF2859AFE6006579FB /* JoinSessionView.swift */,
 			);
 			path = Instasync;
 			sourceTree = "<group>";
@@ -257,8 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				408B46692851A58B00AA9E23 /* ContentView.swift in Sources */,
+				408B46692851A58B00AA9E23 /* CreateSessionView.swift in Sources */,
+				40FC51DE2859AF52006579FB /* MainView.swift in Sources */,
 				408B46672851A58B00AA9E23 /* InstasyncApp.swift in Sources */,
+				40FC51E02859AFE6006579FB /* JoinSessionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
