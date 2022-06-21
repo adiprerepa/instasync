@@ -12,6 +12,7 @@ struct CreateSessionView: View {
         Text("Hello, world!")
             .padding()
     }
+
 }
 
 struct CreateSessionView_Previews: PreviewProvider {

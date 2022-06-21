@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40893F95285FE4C40069FC1F /* InstaSyncMultipeerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40893F94285FE4C40069FC1F /* InstaSyncMultipeerSession.swift */; };
 		408B46672851A58B00AA9E23 /* InstasyncApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408B46662851A58B00AA9E23 /* InstasyncApp.swift */; };
 		408B46692851A58B00AA9E23 /* CreateSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408B46682851A58B00AA9E23 /* CreateSessionView.swift */; };
 		408B466B2851A58C00AA9E23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 408B466A2851A58C00AA9E23 /* Assets.xcassets */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40893F94285FE4C40069FC1F /* InstaSyncMultipeerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaSyncMultipeerSession.swift; sourceTree = "<group>"; };
+		40893F96286195620069FC1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		408B46632851A58B00AA9E23 /* Instasync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instasync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		408B46662851A58B00AA9E23 /* InstasyncApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstasyncApp.swift; sourceTree = "<group>"; };
 		408B46682851A58B00AA9E23 /* CreateSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSessionView.swift; sourceTree = "<group>"; };
@@ -98,12 +101,14 @@
 		408B46652851A58B00AA9E23 /* Instasync */ = {
 			isa = PBXGroup;
 			children = (
+				40893F96286195620069FC1F /* Info.plist */,
 				408B46662851A58B00AA9E23 /* InstasyncApp.swift */,
 				40FC51DD2859AF52006579FB /* MainView.swift */,
 				408B46682851A58B00AA9E23 /* CreateSessionView.swift */,
 				408B466A2851A58C00AA9E23 /* Assets.xcassets */,
 				408B466C2851A58C00AA9E23 /* Preview Content */,
 				40FC51DF2859AFE6006579FB /* JoinSessionView.swift */,
+				40893F94285FE4C40069FC1F /* InstaSyncMultipeerSession.swift */,
 			);
 			path = Instasync;
 			sourceTree = "<group>";
@@ -266,6 +271,7 @@
 				408B46692851A58B00AA9E23 /* CreateSessionView.swift in Sources */,
 				40FC51DE2859AF52006579FB /* MainView.swift in Sources */,
 				408B46672851A58B00AA9E23 /* InstasyncApp.swift in Sources */,
+				40893F95285FE4C40069FC1F /* InstaSyncMultipeerSession.swift in Sources */,
 				40FC51E02859AFE6006579FB /* JoinSessionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +434,7 @@
 				DEVELOPMENT_TEAM = KQQPGNWS32;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Instasync/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -458,6 +465,7 @@
 				DEVELOPMENT_TEAM = KQQPGNWS32;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Instasync/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

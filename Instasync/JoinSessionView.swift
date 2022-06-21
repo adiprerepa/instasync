@@ -8,13 +8,20 @@
 import SwiftUI
 
 struct JoinSessionView: View {
+    var code: String
+    @StateObject var instasyncSession = InstaSyncMultipeerSession()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text(code)
+            Text("Available Devices:")
+            Text(String(describing:instasyncSession.availablePeers.map(\.displayName)))
+        }
     }
 }
 
 struct JoinSessionView_Previews: PreviewProvider {
     static var previews: some View {
-        JoinSessionView()
+        JoinSessionView(code: "foo")
     }
 }

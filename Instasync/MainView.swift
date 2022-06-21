@@ -12,16 +12,26 @@ struct MainView: View {
     @State private var sessionCode: String = ""
     
     var body: some View {
-        VStack {
-            TextField("Session Code", text: $sessionCode)
-                .border(.secondary)
-                .padding(20)
-            Button("Join Session", action: {
-                print("yo")
-            }).padding(20)
-            Button("Create Session", action: {
-                
-            }).padding(20)
+        NavigationView {
+            VStack {
+                TextField("Session Code", text: $sessionCode)
+                    .border(.secondary)
+                    .padding(20)
+                NavigationLink(destination: JoinSessionView(code: sessionCode), label: {
+                    Text("Join Session")
+                        .padding()
+                        .frame(minWidth: 0, maxWidth: 300)
+                        .cornerRadius(40)
+                        .foregroundColor(.blue)
+                })
+                NavigationLink(destination: CreateSessionView(), label: {
+                    Text("Create Session")
+                        .padding()
+                        .frame(minWidth: 0, maxWidth: 300)
+                        .cornerRadius(40)
+                        .foregroundColor(.blue)
+                })
+            }
         }
     }
 }
