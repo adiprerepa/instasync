@@ -8,16 +8,11 @@
 import SwiftUI
 
 struct MainView: View {
-    
-    @State private var sessionCode: String = ""
-    
+        
     var body: some View {
         NavigationView {
             VStack {
-                TextField("Session Code", text: $sessionCode)
-                    .border(.secondary)
-                    .padding(20)
-                NavigationLink(destination: JoinSessionView(code: sessionCode), label: {
+                NavigationLink(destination: JoinSessionView(), label: {
                     Text("Join Session")
                         .padding()
                         .frame(minWidth: 0, maxWidth: 300)
